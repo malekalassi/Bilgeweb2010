@@ -12,4 +12,5 @@ $factory->define(Category::class, function (Faker $faker) {
         'parent_id'     =>  1,
         'menu'          =>  1,
     ];
+
 });

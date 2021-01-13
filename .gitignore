@@ -14,3 +14,4 @@ yarn-error.log
 /public/backend
 /public/frontend
 /public/uploads
+/mysql
