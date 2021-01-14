@@ -27,7 +27,14 @@
         <li>I am working over Category and Product but don't finish</li>
         <li>I am also researched for Gateway pay like iyzco and how can i use it .</li>
         </ol>
-    
     </li>
-    
+</ol>
+<div>second week</div>
+<ol>
+    <li>
+    Make fake data to products , categories , product and brands
+    </li>
+    <li>
+    Work over Update Category function in category controller
+    </li>
 </ol>
