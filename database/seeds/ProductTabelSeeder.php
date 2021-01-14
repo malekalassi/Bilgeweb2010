@@ -9,15 +9,17 @@ class ProductTabelSeeder extends Seeder
         [
          'brand_id'     => 1,
           'sku'         => '09484',
-          'name'        => '98Tv',
+          'name'        => 'mobile',
           'slug'        =>  'tv',
+           'price'      => 9 ,
           'quantity'    => 9
         ],
         [
             'brand_id'     => 2,
             'sku'         => '09484',
-            'name'        => '98Tv',
+            'name'        => 'mouse',
             'slug'        =>  'tv',
+            'price'      => 19 ,
             'quantity'    => 9
         ],
         [
@@ -25,14 +27,31 @@ class ProductTabelSeeder extends Seeder
             'sku'         => '09484',
             'name'        => '98Tv',
             'slug'        =>  'device',
+            'price'      => 18 ,
             'quantity'    => 9
         ],
         [
             'brand_id'     => 1,
             'sku'         => '09484',
-            'name'        => '98Tv',
-            'slug'        =>  'mix',
+            'name'        => 'bara',
+            'slug'        =>  'lara',
             'quantity'    => 5
+        ],
+        [
+            'brand_id'     => 1,
+            'sku'         => '09484',
+            'name'        => '98Tv',
+            'slug'        =>  'bara',
+            'price'      => 50 ,
+            'quantity'    => 5
+        ],
+        [
+            'brand_id'     => 1,
+            'sku'         => '09484',
+            'name'        => 'ara',
+            'slug'        =>  'mix',
+            'price'      => 69 ,
+            'quantity'    => 4
         ],
     ];
     /**
