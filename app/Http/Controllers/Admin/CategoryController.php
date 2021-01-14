@@ -29,8 +29,31 @@ class CategoryController extends BaseController
         return view('admin.categories.create' ,compact('categories'));
     }
 
-    public function edit()
+    public function edit($id)
     {
+        $targetCategory = $this->categoryRepository->findCategoryById($id);
         $categories = $this->categoryRepository->treeList();
+//        return $categories;
+
+
+        $this->setPageTitle('Categories', 'Edit Category : '.$targetCategory->name);
+        return view('admin.categories.edit', compact('categories', 'targetCategory'));
+    }
+
+    public function update(Request $request)
+    {
+        //make validate
+        $this->validate($request ,[
+            'name' =>'required|max:191',
+            'parent_id' => 'required|not_in:0' ,
+            'image'=>'mimes:jpg,jpeg,png|max:1000'
+        ]);
+        $params = $request->except('_token');
+
+        $category = $this->categoryRepository->updateCategory($params);
+        if (!$category){
+            return $this->responseRedirect('Error occurred while updating category.' ,'error' ,true,true);
+        }
+        return  $this->responseRedirectBack('Category updated successfully' ,'success' ,false ,false);
     }
 }
