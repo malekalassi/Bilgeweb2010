@@ -14,7 +14,14 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $category->name }}</a>
                                 <div class="dropdown-menu" aria-labelledby="{{ $category->slug }}">
                                     @foreach($category->items as $item)
-                                        <a class="dropdown-item" href="{{ route('category.show', $item->slug) }}">{{ $item->name }}</a>
+                                        <a class="dropdown-item" href="{{ route('category.show', $item->slug) }}">{{ $item->name }}@if ($item->items->count() > 0) <i class="fas fa-arrow-circle-right">@endif</i></a>
+                                        @if ($item->items->count() > 0)
+                                        @foreach($item->items as $item)
+                                            <a class="dropdown-item" style="margin-left:5px " href="{{ route('category.show', $item->slug) }}">{{ $item->name }}</a>
+                                        @endforeach
+
+
+                                        @endif
                                     @endforeach
                                 </div>
                             </li>
