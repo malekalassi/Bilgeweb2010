@@ -23,7 +23,7 @@ class ProductCategoryTableSeeder extends Seeder
             'product_id' =>4
         ],
         [
-            'category_id' => 9,
+            'category_id' => 3,
             'product_id' =>4
         ],
         [
