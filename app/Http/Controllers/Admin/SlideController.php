@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Contracts\SlideContract;
 use App\Http\Controllers\BaseController;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class SlideController extends BaseController
@@ -48,7 +47,28 @@ class SlideController extends BaseController
         if (!$slide){
             return $this->responseRedirectBack('Error occurred while creating brand.' ,'error' , true , true);
         }
-        return  $this->responseRedirect('admin.slides.index' ,'success', 'slide add successfully' ,false , false);
+        return  $this->responseRedirect('admin.slides.index' ,'success', 'slide added successfully' ,false , false);
+    }
+
+    public function edit($id)
+    {
+        $slide =$this->slideRepository->findSlideById($id);
+        $this->setPageTitle('Slides' ,'Update Slide');
+
+        return view('admin.slides.edit'  ,compact('slide'));
+    }
+
+    public function delete($id)
+    {
+
+        $slide =$this->slideRepository->deleteSlide($id);
+
+        if ($slide){
+            return $this->responseRedirect('admin.slides.index' , 'success' ,'slide deleted successfully' ,false , false );
+        }
+        return $this->responseRedirectBack('Error occurred while deleting slide.' ,'error' , true , true);
+
+
     }
 
 }

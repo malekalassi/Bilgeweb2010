@@ -25,4 +25,6 @@ interface SlideContract
      */
     public function deleteSlide($id);
 
+    public function findSlideById($id);
+
 }
