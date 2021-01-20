@@ -14,9 +14,11 @@
                         <div class="col-md-3">
                             <figure class="card card-product">
                                 @if ($product->images->count() > 0)
-                                    <div class="img-wrap padding-y"><img src="{{ asset('storage/'.$product->images->first()->full) }}" alt=""></div>
+                                    <div class="img-wrap padding-y"><img src="{{ asset('storage/products'.$product->images->first()->full) }}" alt=""></div>
                                 @else
-                                    <div class="img-wrap padding-y"><img src="https://via.placeholder.com/176" alt=""></div>
+{{--                                    <div class="img-wrap padding-y"><img src="https://via.placeholder.com/176" alt=""></div>--}}
+                                    <div class="img-wrap padding-y"><img src="{{ asset('storage/products/2.jpg') }}" alt=""></div>
+
                                 @endif
                                 <figcaption class="info-wrap">
                                     <h4 class="title"><a href="{{ route('product.show', $product->slug) }}">{{ $product->name }}</a></h4>
