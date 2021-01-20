@@ -14,7 +14,7 @@ class CreateAttributeValuesTable extends Migration
     public function up()
     {
         Schema::create('attribute_values', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->unsignedInteger('attribute_id');
             $table->foreign('attribute_id')->references('id')->on('attributes');
             $table->text('value');
