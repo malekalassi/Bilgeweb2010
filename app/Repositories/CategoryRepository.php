@@ -7,7 +7,9 @@ namespace App\Repositories;
 use App\Contracts\CategoryContract;
 use App\Models\Category;
 use App\Traits\UploadAble;
+use Doctrine\Instantiator\Exception\InvalidArgumentException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\UploadedFile;
 
 class CategoryRepository extends  BaseRepository implements CategoryContract
@@ -38,14 +40,36 @@ class CategoryRepository extends  BaseRepository implements CategoryContract
 
     public function createCategory(array $params)
     {
-        // TODO: Implement createCategory() method.
+        try {
+
+            $collection = collect($params);
+            $image = null ;
+            if ($collection->has('image') && $params['image'] instanceof UploadedFile){
+                $image = $this->uploadOne($params['image'] ,'categories');
+            }
+            $featured = $collection->has('featured') ? 1 : 0 ;
+            $menu = $collection->has('menu') ? 1 : 0 ;
+
+            $merge =$collection->merge(compact('image' , 'menu' , 'featured'));
+
+            $category = new Category($merge->all());
+
+            $category->save();
+
+            return $category;
+
+        }
+        catch (QueryException $exception){
+            throw new InvalidArgumentException($exception->getMessage());
+        }
+
     }
 
     public function updateCategory(array $params)
     {
         $category = $this->findCategoryById($params['id']);
         $collection = collect($params);
-
+        $image = null ;
         if ($collection->has('image') && $params['image'] instanceof UploadedFile){
             if ($category->image != null){
                 $this->deleteOne($category->image);
@@ -64,7 +88,14 @@ class CategoryRepository extends  BaseRepository implements CategoryContract
 
     public function deleteCategory($id)
     {
-        // TODO: Implement deleteCategory() method.
+        $category = $this->findCategoryById($id);
+
+        if ($category->image != null ){
+            $this->deleteOne($category->image);
+        }
+        $category->delete();
+        return $category ;
+
     }
 
     public function treeList()
