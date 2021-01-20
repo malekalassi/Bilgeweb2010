@@ -16,6 +16,7 @@ class SettingServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
         $this->app->bind('settings', function ($app) {
             return new Setting();
         });
@@ -30,6 +31,7 @@ class SettingServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
         // only use the Settings package if the Settings table is present in the database
         if (!\App::runningInConsole() && count(Schema::getColumnListing('settings'))) {
             $settings = Setting::all();

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,55 +22,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11f16f71-461c-471d-ac97-9c7275634614" name="Default Changelist" comment="Add something">
-      <change afterPath="$PROJECT_DIR$/app/Contracts/BaseContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Contracts/BrandContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BrandController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/SettingServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/BrandRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/FlashMessages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/UploadAble.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Attribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/AttributeValue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Brand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_065830_create_admins_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_111354_create_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_113200_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_115618_create_attributes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_120349_create_attribute_values_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_123255_create_brands_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AdminsTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AttributeValuesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AttributesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/SettingsTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/images/avatars/avatar1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/images/avatars/avatar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/images/avatars/avatar3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/images/banners/banner-request.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/flash.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="11f16f71-461c-471d-ac97-9c7275634614" name="Default Changelist" comment="Category">
+      <change afterPath="$PROJECT_DIR$/app/Contracts/OrderContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Site/CheckoutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/storeProductFromRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/OrderRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/OrderItem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_11_073841_create_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_11_074405_create_order_items_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/8 mb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/SettingServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/SettingServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/css/ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/css/ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +54,16 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="DockerExecCommand">
+    <ExecCommand>
+      <option name="command" value="chmod -R 777 storage" />
+      <option name="imageId" value="sha256:4faba7c8cfc32376900f29370e7a1502a1b823b82534015da22d39d8504a443b" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="php artisan migrate" />
+      <option name="imageId" value="sha256:4faba7c8cfc32376900f29370e7a1502a1b823b82534015da22d39d8504a443b" />
+    </ExecCommand>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -87,6 +73,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -186,6 +180,8 @@
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/typicms/nestablecollection" />
+      <path value="$PROJECT_DIR$/vendor/hardevine/shoppingcart" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mm3bMMb6n2ceQc8Wz04gCOkSiQ" />
@@ -200,7 +196,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public/products" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -209,18 +205,38 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Laravel Projects\Bilgeweb2010\e-commerce\storage\app\public\products" />
+      <recent name="D:\Laravel Projects\Bilgeweb2010\e-commerce\resources\views\admin\slides" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Laravel Projects\Bilgeweb2010\e-commerce\resources\views\site\includes" />
+      <recent name="D:\Laravel Projects\Bilgeweb2010\e-commerce\app\Http\Controllers\Admin" />
       <recent name="D:\Laravel Projects\Bilgeweb2010\e-commerce\app\models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -231,23 +247,367 @@
       <option name="presentableId" value="Default" />
       <updated>1610085010279</updated>
       <workItem from="1610085011378" duration="10271000" />
-      <workItem from="1610095502450" duration="19843000" />
+      <workItem from="1610095502450" duration="44352000" />
+      <workItem from="1610268785638" duration="27933000" />
+      <workItem from="1610349857781" duration="6417000" />
+      <workItem from="1610360633144" duration="35000" />
+      <workItem from="1610364097200" duration="163000" />
+      <workItem from="1610438047544" duration="5205000" />
+      <workItem from="1610477880656" duration="17000" />
+      <workItem from="1610487033148" duration="25252000" />
+      <workItem from="1610602212886" duration="26621000" />
+      <workItem from="1610689554957" duration="12909000" />
+      <workItem from="1610714475452" duration="82000" />
+      <workItem from="1610714669369" duration="10421000" />
+      <workItem from="1610742730129" duration="19616000" />
+      <workItem from="1610975811457" duration="700000" />
+      <workItem from="1611026173620" duration="6310000" />
+      <workItem from="1611046562896" duration="9505000" />
     </task>
-    <task id="LOCAL-00001" summary="MultiAuth setup and dashboard view">
-      <created>1610098993700</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00011" summary="Base controller ,repository ,conract to project">
+      <created>1610134052194</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1610098993701</updated>
+      <updated>1610134052194</updated>
     </task>
-    <task id="LOCAL-00002" summary="Add something">
-      <created>1610132678988</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00012" summary="Add brand resources to project">
+      <created>1610134092849</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1610132678988</updated>
+      <updated>1610134092849</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00013" summary="migration of brand">
+      <created>1610134120035</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610134120035</updated>
+    </task>
+    <task id="LOCAL-00014" summary="repository sevice provider">
+      <created>1610134154258</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610134154258</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Apload and delete image trait">
+      <created>1610134179873</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610134179873</updated>
+    </task>
+    <task id="LOCAL-00016" summary="move user to model folder">
+      <created>1610134203665</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610134203665</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add setting service">
+      <created>1610134223743</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610134223743</updated>
+    </task>
+    <task id="LOCAL-00018" summary="avatar image">
+      <created>1610134243330</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610134243330</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Create Category migration">
+      <created>1610335663501</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610335663503</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Create Pivot table product and category">
+      <created>1610335864869</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610335864869</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add category page (HTML)">
+      <created>1610349919012</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1610349919013</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add Category cntract and Category repository">
+      <created>1610351345265</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610351345265</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Admin Category resource controller">
+      <created>1610356260674</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1610356260674</updated>
+    </task>
+    <task id="LOCAL-00024" summary="create fake data for category">
+      <created>1610364156040</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610364156040</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Category Model relationship">
+      <created>1610364198381</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610364198381</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Build Category controller">
+      <created>1610364228808</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610364228808</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Create Product table in database">
+      <created>1610438153039</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610438153039</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Share Cart count across all views">
+      <created>1610438217128</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1610438217128</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Modify User model">
+      <created>1610438258644</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1610438258644</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Create image table for products">
+      <created>1610450567008</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1610450567009</updated>
+    </task>
+    <task id="LOCAL-00031" summary="create navbar for homepage">
+      <created>1610451178867</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1610451178868</updated>
+    </task>
+    <task id="LOCAL-00032" summary="create header  for homepage">
+      <created>1610451213649</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1610451213649</updated>
+    </task>
+    <task id="LOCAL-00033" summary="create footer  for homepage">
+      <created>1610451230203</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1610451230203</updated>
+    </task>
+    <task id="LOCAL-00034" summary="create homeproduct for products">
+      <created>1610451257140</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1610451257140</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Styles">
+      <created>1610451294267</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1610451294267</updated>
+    </task>
+    <task id="LOCAL-00036" summary="product model">
+      <created>1610460850623</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1610460850627</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add Product Controller">
+      <created>1610461681181</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1610461681183</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Read me">
+      <created>1610487146204</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1610487146204</updated>
+    </task>
+    <task id="LOCAL-00039" summary="First Week report">
+      <created>1610489995499</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1610489995499</updated>
+    </task>
+    <task id="LOCAL-00040" summary="gitignore update">
+      <created>1610528968426</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1610528968427</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Create fake data to (product , brand and productCategory)">
+      <created>1610537196322</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1610537196323</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Add Category pages to admin Panel">
+      <created>1610603655465</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1610603655465</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Create fake date for Product and attributeTable">
+      <created>1610609653768</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1610609653768</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Work over update method in category controller">
+      <created>1610623614678</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1610623614678</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Update read me">
+      <created>1610623662133</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1610623662133</updated>
+    </task>
+    <task id="LOCAL-00046" summary="edit Category in navbar">
+      <created>1610713212108</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1610713212110</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Create data seeder for Product">
+      <created>1610713242774</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1610713242774</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Create Slide resources (model , controller ,view , migration)">
+      <created>1610713343548</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1610713343548</updated>
+    </task>
+    <task id="LOCAL-00049" summary="work over store method in slide resource">
+      <created>1610720548282</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1610720548285</updated>
+    </task>
+    <task id="LOCAL-00050" summary="edit brand resource migration">
+      <created>1610970790194</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1610970790197</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Category page">
+      <created>1610970845042</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1610970845043</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Work over cart resource">
+      <created>1610970988360</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1610970988360</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Attribute resource">
+      <created>1611127655385</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1611127655386</updated>
+    </task>
+    <task id="LOCAL-00054" summary="view composer service provider">
+      <created>1611127762617</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1611127762617</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Site blade pages">
+      <created>1611127849162</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1611127849162</updated>
+    </task>
+    <task id="LOCAL-00056" summary="home page">
+      <created>1611127921952</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1611127921952</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Slide resource">
+      <created>1611128009282</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1611128009282</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Product resource">
+      <created>1611128086002</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1611128086002</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Category">
+      <created>1611128141062</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1611128141062</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,57 +623,35 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="MultiAuth setup and dashboard view" />
-    <MESSAGE value="Add something" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add something" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1610104160138">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1610104160138" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610110149162">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1610110149162" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1610095452914">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1610095452914" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1610095452913">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1610095452913" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1610095452913">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1610095452913" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1610095452913">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1610095452913" />
-    <state x="414" y="106" key="NewPhpClassDialog" timestamp="1610114536788">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="414" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1610114536788" />
-    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1610110004558">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1610110004558" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1610132757007">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1610132757007" />
-    <state x="500" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610099012590">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="500" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1610099012590" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610110302732">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1610110302732" />
+    <MESSAGE value="product model" />
+    <MESSAGE value="Add Product Controller" />
+    <MESSAGE value="Read me" />
+    <MESSAGE value="First Week report" />
+    <MESSAGE value="gitignore update" />
+    <MESSAGE value="Create fake data to (product , brand and productCategory)" />
+    <MESSAGE value="Add Category pages to admin Panel" />
+    <MESSAGE value="Create fake date for Product" />
+    <MESSAGE value="Create fake date for Product and attributeTable" />
+    <MESSAGE value="Work over update method in category controller" />
+    <MESSAGE value="Update read me" />
+    <MESSAGE value="edit Category in navbar" />
+    <MESSAGE value="Create data seeder for Product" />
+    <MESSAGE value="Create Slide resources (model , controller ,view , migration)" />
+    <MESSAGE value="work over store method in slide resource" />
+    <MESSAGE value="edit brand resource migration" />
+    <MESSAGE value="Category page" />
+    <MESSAGE value="Work over cart resource" />
+    <MESSAGE value="Attribute resource" />
+    <MESSAGE value="view composer service provider" />
+    <MESSAGE value="Site blade pages" />
+    <MESSAGE value="home page" />
+    <MESSAGE value="Slide resource" />
+    <MESSAGE value="Product resource" />
+    <MESSAGE value="Category" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category" />
   </component>
 </project>
